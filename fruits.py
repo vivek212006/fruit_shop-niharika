@@ -30,3 +30,9 @@ while True:
         total_bill += cost
     else:
         print("❌ Fruit not in the list. Please select from available options.")
+        print("\n🧾 FINAL BILL")
+print("-----------------------------------")
+for fruit, info in cart.items():
+    print(f"{fruit.title()} - ₹{info['price_per_kg']}/kg x {info['qty']}kg = ₹{info['cost']:.2f}")
+print("-----------------------------------")
+print(f"Total Amount to Pay: ₹{total_bill:.2f}")
