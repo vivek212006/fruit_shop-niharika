@@ -10,3 +10,9 @@ fruit_prices = {
     "papaya": 60,
     "pomegranate": 140
 }
+cart = {}
+total_bill = 0
+
+print("🛍️ Welcome to the Fruit Shop!")
+print("\nAvailable Fruits (Price per kg):")
+print("-----------------------------------")
