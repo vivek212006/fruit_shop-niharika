@@ -21,4 +21,12 @@ for i, (fruit, price) in enumerate(fruit_prices.items(), 1):
 print("-----------------------------------")
 
 while True:
-    choice = input("\nEnter the name of the fruit to buy (or type 'done' to finish): ").lower()
+    choice = input("\nEnter the name of the fruit to buy (or type 'done' to finish): ").lower() if choice == 'done':
+        break
+    if choice in fruit_prices:
+        qty = float(input(f"How many kg of {choice}? "))
+        cost = qty * fruit_prices[choice]
+        cart[choice] = {'price_per_kg': fruit_prices[choice], 'qty': qty, 'cost': cost}
+        total_bill += cost
+    else:
+        print("❌ Fruit not in the list. Please select from available options.")
