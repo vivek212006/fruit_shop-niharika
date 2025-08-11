@@ -8,7 +8,9 @@ fruit_prices = {
     "watermelon": 30,
     "kiwi": 200,
     "papaya": 60,
-    "pomegranate": 140
+
+
+    -"pomegranate": 140
 }
 cart = {}
 total_bill = 0
